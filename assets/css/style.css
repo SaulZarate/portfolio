@@ -549,12 +549,6 @@ section {
   overflow: hidden;
   z-index: 1;
   border: 1px solid #eee;
-  height: 250px;
-}
-.portfolio .portfolio-wrap img{
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
 }
 .portfolio .portfolio-wrap::before {
   content: "";
