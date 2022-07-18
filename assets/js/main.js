@@ -224,4 +224,22 @@
     })
   });
 
+  /**
+  *  Modal, página en construcción
+  */
+ window.addEventListener('DOMContentLoaded', () => {
+  const divModal = document.getElementById('modal-estadoDeLaPagina')
+  const btnClose = document.querySelector('#modal-estadoDeLaPagina .btn-close')
+  const contentModal = document.querySelector('#modal-estadoDeLaPagina .content')
+
+  contentModal.addEventListener('click', e => e.stopPropagation())
+  divModal.addEventListener('click', (e) => removeModal(e))
+  btnClose.addEventListener('click', (e) => removeModal(e))
+
+  const removeModal = (e) => {
+    divModal.remove()
+  }
+  
+ })
+
 })()
